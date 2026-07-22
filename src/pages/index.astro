@@ -1,0 +1,853 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="brand">
+        <span class="brand-title">The Derby Double</span>
+        <span class="brand-sub">Derby, Tasmania</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#cabins" class="nav-link">The Cabins</a>
+        <a href="#amenities" class="nav-link">Amenities</a>
+        <a href="#location" class="nav-link">Location</a>
+      </nav>
+
+      <a href="#cabins" class="btn btn-primary btn-sm" id="nav-book-btn">
+        <span>Book Your Stay</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero-section py-section">
+    <div class="container hero-container">
+      <div class="hero-text-block animate-fade-in">
+        <div class="hero-badge-group">
+          <span class="badge">Derby, Tasmania</span>
+          <span class="badge badge-timber">Ringarooma River Views</span>
+        </div>
+
+        <h1 class="hero-heading">
+          A secluded nature retreat above the Ringarooma River.
+        </h1>
+
+        <p class="hero-lead">
+          Welcome to <strong>The Derby Double</strong> — twin architecturally designed timber cabins tucked into the hillside of Derby, Tasmania. Purpose-built for Blue Derby mountain bike riders, families, and nature retreats.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#cabins" class="btn btn-primary" id="hero-cabins-btn">
+            <span>View Cabins & Availability</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
+          <a href="#amenities" class="btn btn-outline" id="hero-amenities-btn">
+            <span>Rider Amenities</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Natural Hero Image Illustration Container -->
+      <div class="hero-visual-card">
+        <svg class="hero-nature-svg" viewBox="0 0 700 480" fill="none" preserveAspectRatio="xMidYMid slice">
+          <rect width="700" height="480" fill="#f4efe6"/>
+          <!-- River & Forest Hills Background -->
+          <path d="M0 320 Q200 270 400 320 T700 290 L700 480 L0 480 Z" fill="#2d4a3e" opacity="0.18"/>
+          <path d="M0 365 Q250 330 450 375 T700 345 L700 480 L0 480 Z" fill="#22382d" opacity="0.35"/>
+          <path d="M-50 415 Q150 395 350 435 T750 405 L750 480 L-50 480 Z" fill="#1c3327"/>
+          <!-- Ringarooma River Stroke -->
+          <path d="M0 445 Q300 415 700 455" stroke="#7a9a8b" stroke-width="14" opacity="0.75"/>
+          
+          <!-- Twin Timber Cabins -->
+          <polygon points="170,270 170,205 250,155 330,205 330,270" fill="#a85e2e"/>
+          <rect x="230" y="220" width="30" height="50" fill="#faf8f5"/>
+          <rect x="190" y="215" width="26" height="26" fill="#e6ded2"/>
+          <rect x="274" y="215" width="26" height="26" fill="#e6ded2"/>
+
+          <polygon points="410,240 410,175 490,125 570,175 570,240" fill="#8f4e24"/>
+          <rect x="470" y="190" width="30" height="50" fill="#faf8f5"/>
+          <rect x="430" y="185" width="26" height="26" fill="#e6ded2"/>
+          <rect x="514" y="185" width="26" height="26" fill="#e6ded2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Highlights Bar -->
+  <section class="highlights-bar">
+    <div class="container">
+      <div class="highlights-flex">
+        <div class="highlight-box">
+          <span class="highlight-number">2</span>
+          <span class="highlight-label">Standalone Timber Cabins</span>
+        </div>
+        <div class="highlight-divider"></div>
+        <div class="highlight-box">
+          <span class="highlight-number">10</span>
+          <span class="highlight-label">Max Capacity (Booked Together)</span>
+        </div>
+        <div class="highlight-divider"></div>
+        <div class="highlight-box">
+          <span class="highlight-icon">🔒</span>
+          <span class="highlight-label">Private Keypad Bike Sheds</span>
+        </div>
+        <div class="highlight-divider"></div>
+        <div class="highlight-box">
+          <span class="highlight-icon">🌲</span>
+          <span class="highlight-label">Minutes to Blue Derby Trails</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Cabins Showcase Section -->
+  <section id="cabins" class="cabins-section py-section">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="badge">Accommodation</span>
+        <h2 class="section-heading">The Cabins</h2>
+        <p class="section-lead">
+          Choose between <strong>The Switchback Cabin</strong> and <strong>The Berm Cabin</strong>, or book both together for larger groups of up to 10 guests.
+        </p>
+      </div>
+
+      <div class="cabins-list">
+        <!-- Cabin 1: The Switchback Cabin -->
+        <article class="cabin-card" id="cabin-switchback">
+          <div class="cabin-media">
+            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="600" height="400" fill="#f3eee6"/>
+              <polygon points="150,270 150,175 300,95 450,175 450,270" fill="#1c3327"/>
+              <rect x="260" y="195" width="45" height="75" fill="#a85e2e"/>
+              <rect x="180" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
+              <rect x="330" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
+            </svg>
+            <div class="cabin-media-badge">The Switchback Cabin</div>
+          </div>
+
+          <div class="cabin-content">
+            <div class="cabin-title-row">
+              <div>
+                <span class="cabin-tag">Cabin 1</span>
+                <h3 class="cabin-name">The Switchback Cabin</h3>
+              </div>
+              <span class="cabin-spec">2 Bedrooms • 4 Guests</span>
+            </div>
+
+            <p class="cabin-text">
+              Perched on the hill with sweeping views across the Ringarooma River valley. The Switchback Cabin features warm timber accents, an open living space, private outdoor deck, and dedicated secure bike storage.
+            </p>
+
+            <ul class="cabin-feature-list">
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Private Secure Bike Storage:</strong> Keypad code access for your bikes & gear</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Outdoor Deck & Views:</strong> Overlooking the Ringarooma River and forest canopy</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Fully Equipped Kitchen:</strong> Cookware, coffee maker, and dining area</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Shared Laundry Access:</strong> Washer & drying space for post-trail gear</span>
+              </li>
+            </ul>
+
+            <div class="cabin-card-footer">
+              <span class="cabin-price-hint">Direct Airbnb Booking</span>
+              <a 
+                href="https://www.airbnb.com.au/rooms/1611830891863557743" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-timber"
+                id="book-switchback-btn"
+              >
+                <span>Book The Switchback on Airbnb</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabin 2: The Berm Cabin -->
+        <article class="cabin-card" id="cabin-berm">
+          <div class="cabin-media">
+            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="600" height="400" fill="#e8f0ec"/>
+              <polygon points="150,270 150,175 300,95 450,175 450,270" fill="#a85e2e"/>
+              <rect x="260" y="195" width="45" height="75" fill="#1c3327"/>
+              <rect x="180" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
+              <rect x="330" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
+            </svg>
+            <div class="cabin-media-badge">The Berm Cabin</div>
+          </div>
+
+          <div class="cabin-content">
+            <div class="cabin-title-row">
+              <div>
+                <span class="cabin-tag">Cabin 2</span>
+                <h3 class="cabin-name">The Berm Cabin</h3>
+              </div>
+              <span class="cabin-spec">2 Bedrooms • 4 Guests</span>
+            </div>
+
+            <p class="cabin-text">
+              A serene companion cabin nestled alongside the forest edge. The Berm Cabin provides a peaceful setting after a day on the trails, complete with secure bike storage, modern kitchen amenities, and sunlit living spaces.
+            </p>
+
+            <ul class="cabin-feature-list">
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Private Keypad Bike Shed:</strong> Safe, covered lockup storage for mountain bikes</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Timber Living Spaces:</strong> Comfortable seating, heating, and bushland outlook</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Self Check-In:</strong> Keyless entry for flexible arrival times</span>
+              </li>
+              <li>
+                <span class="icon-check">✓</span>
+                <span><strong>Group Booking Friendly:</strong> Pair with The Switchback to accommodate up to 10 guests</span>
+              </li>
+            </ul>
+
+            <div class="cabin-card-footer">
+              <span class="cabin-price-hint">Direct Airbnb Booking</span>
+              <a 
+                href="https://www.airbnb.com.au/rooms/1611313021568308752" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-primary"
+                id="book-berm-btn"
+              >
+                <span>Book The Berm on Airbnb</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Group Booking Callout Banner -->
+      <div class="group-booking-banner">
+        <div class="group-banner-text">
+          <h3>Traveling with a larger group or bike squad?</h3>
+          <p>Book both <strong>The Berm</strong> and <strong>The Switchback</strong> together to enjoy the entire hillside property for up to 10 guests.</p>
+        </div>
+        <a href="#location" class="btn btn-outline">Inquire for Group Stay</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rider & Guest Amenities Grid -->
+  <section id="amenities" class="amenities-section py-section">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="badge">Designed for Riders & Guests</span>
+        <h2 class="section-heading">Thoughtful Amenities</h2>
+        <p class="section-lead">
+          Every feature at The Derby Double is chosen to make your stay effortless, whether you're riding Blue Derby trails or relaxing by the river.
+        </p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon">🔒</div>
+          <h4>Private Bike Storage</h4>
+          <p>Each cabin features its own secure storage shed equipped with digital keypad codes to keep your bikes safe.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">💧</div>
+          <h4>Bike Wash & Cleanup</h4>
+          <p>Access to outdoor wash space and cleaning equipment to rinse off trail dust after a full day riding.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">🧺</div>
+          <h4>Laundry Facilities</h4>
+          <p>Shared laundry room with washer and drying space so your riding gear is fresh for the next day.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">🌿</div>
+          <h4>Outdoor Decks & Views</h4>
+          <p>Private decks offering elevated views over the Ringarooma River and surrounding Tasmanian forest canopy.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">📶</div>
+          <h4>Wi-Fi & Comfort</h4>
+          <p>High-speed wireless internet, heating, fully equipped kitchen, and plush linen for restful recovery.</p>
+        </div>
+
+        <div class="amenity-card">
+          <div class="amenity-icon">🔑</div>
+          <h4>Self Check-In</h4>
+          <p>Keyless smart locks on all doors allow seamless, flexible check-in at any time after 3:00 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Footer -->
+  <footer id="location" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-details">
+          <h2 class="footer-title">The Derby Double</h2>
+          <p class="footer-sub">Derby, Tasmania 7264, Australia</p>
+          <p class="footer-desc">
+            Hillside twin cabin accommodation overlooking the Ringarooma River. Located just minutes from the world-famous Blue Derby mountain bike network.
+          </p>
+
+          <div class="contact-block">
+            <div class="contact-line">
+              <strong>Location:</strong> Derby, Tasmania (7264)
+            </div>
+            <div class="contact-line">
+              <strong>Management:</strong> Pinned Property Management (Airbnb Superhost)
+            </div>
+            <div class="contact-line">
+              <strong>Email Enquiries:</strong> <a href="mailto:stay@derbydouble.com.au" class="email-link">stay@derbydouble.com.au</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Placeholder Container -->
+        <div class="footer-map-card">
+          <div class="map-card-header">
+            <span>📍 Derby, Tasmania — Ringarooma River</span>
+          </div>
+          <iframe
+            id="google-maps-iframe"
+            title="Map location of The Derby Double in Derby, Tasmania"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11942.564287508053!2d147.7925!3d-41.1444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa706692db20b66b%3A0x503c94e45d827a0!2sDerby%20TAS%207264!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+            width="100%"
+            height="260"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; {new Date().getFullYear()} The Derby Double. All rights reserved. Self-contained twin cabins in Derby, Tasmania.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  /* Header Styling */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(250, 248, 245, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-forest);
+    line-height: 1.15;
+  }
+
+  .brand-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .nav-desktop {
+    display: none;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .nav-desktop {
+      display: flex;
+    }
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-body);
+    transition: color var(--transition-smooth);
+  }
+
+  .nav-link:hover {
+    color: var(--color-timber);
+  }
+
+  .btn-sm {
+    padding: 0.6rem 1.35rem;
+    font-size: 0.875rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 4.5rem 0 4rem;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 960px) {
+    .hero-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 4.5rem;
+    }
+  }
+
+  .hero-badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-heading {
+    font-size: clamp(2.3rem, 4.5vw, 3.5rem);
+    font-weight: 600;
+    color: var(--text-title);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  .hero-lead {
+    font-size: 1.125rem;
+    color: var(--text-body);
+    margin-bottom: 2.25rem;
+    line-height: 1.7;
+  }
+
+  .hero-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero-visual-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-card);
+    box-shadow: var(--shadow-card);
+    aspect-ratio: 4 / 3;
+    background-color: var(--bg-subtle);
+  }
+
+  .hero-nature-svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Highlights Bar */
+  .highlights-bar {
+    background-color: var(--bg-surface);
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 2rem 0;
+  }
+
+  .highlights-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem 3.5rem;
+  }
+
+  .highlight-box {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .highlight-number {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-timber);
+    line-height: 1;
+  }
+
+  .highlight-icon {
+    font-size: 1.35rem;
+    line-height: 1;
+  }
+
+  .highlight-label {
+    font-size: 0.925rem;
+    font-weight: 600;
+    color: var(--text-title);
+  }
+
+  .highlight-divider {
+    width: 1px;
+    height: 28px;
+    background-color: var(--border-subtle);
+    display: none;
+  }
+
+  @media (min-width: 850px) {
+    .highlight-divider {
+      display: block;
+    }
+  }
+
+  /* Cabins Section */
+  .section-intro {
+    max-width: 680px;
+    margin: 0 auto 4rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    margin: 0.75rem 0 0.85rem;
+  }
+
+  .section-lead {
+    font-size: 1.075rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+
+  .cabins-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .cabin-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  }
+
+  @media (min-width: 960px) {
+    .cabin-card {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .cabin-card:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+  .cabin-media {
+    position: relative;
+    background-color: var(--bg-subtle);
+    height: 100%;
+    min-height: 280px;
+  }
+
+  .cabin-media svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cabin-media-badge {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    padding: 0.4rem 0.9rem;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-forest);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .cabin-content {
+    padding: 2.75rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cabin-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .cabin-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-timber);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .cabin-name {
+    font-size: 1.85rem;
+    color: var(--text-title);
+  }
+
+  .cabin-spec {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-forest);
+    background-color: var(--bg-accent);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
+  }
+
+  .cabin-text {
+    font-size: 1rem;
+    color: var(--text-body);
+    margin-bottom: 1.5rem;
+    line-height: 1.65;
+  }
+
+  .cabin-feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .cabin-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.95rem;
+    color: var(--text-body);
+  }
+
+  .icon-check {
+    color: var(--color-forest);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .cabin-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .cabin-price-hint {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  /* Group Booking Banner */
+  .group-booking-banner {
+    background-color: var(--bg-accent);
+    border: 1.5px dashed var(--color-forest);
+    border-radius: var(--radius-md);
+    padding: 2.25rem 2.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .group-banner-text h3 {
+    font-size: 1.3rem;
+    color: var(--color-forest);
+    margin-bottom: 0.35rem;
+  }
+
+  .group-banner-text p {
+    font-size: 0.975rem;
+    color: var(--text-body);
+  }
+
+  /* Amenities Section */
+  .amenities-section {
+    background-color: var(--bg-subtle);
+  }
+
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .amenity-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-md);
+    padding: 2.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  }
+
+  .amenity-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card);
+  }
+
+  .amenity-icon {
+    font-size: 2.25rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .amenity-card h4 {
+    font-size: 1.2rem;
+    color: var(--text-title);
+  }
+
+  .amenity-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* Footer Section */
+  .site-footer {
+    background-color: var(--color-forest);
+    color: #f2ede4;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    padding: 5.5rem 0 3.5rem;
+  }
+
+  @media (min-width: 900px) {
+    .footer-grid {
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4.5rem;
+    }
+  }
+
+  .footer-title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-sub {
+    font-size: 0.925rem;
+    color: var(--color-sand);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-desc {
+    font-size: 0.975rem;
+    color: #d1dcd5;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+  }
+
+  .contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.925rem;
+    color: #e6ded2;
+  }
+
+  .email-link {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .footer-map-card {
+    background-color: #ffffff;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: var(--text-title);
+  }
+
+  .map-card-header {
+    padding: 0.9rem 1.35rem;
+    background-color: var(--bg-subtle);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-forest);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #9ab0a4;
+  }
+</style>

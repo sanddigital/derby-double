@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Natural & Light Nature Retreat Color System */
+  --bg-main: #faf8f5;          /* Warm linen background */
+  --bg-surface: #ffffff;       /* Crisp card background */
+  --bg-subtle: #f3eee6;        /* Soft sand tint */
+  --bg-accent: #e8f0ec;        /* Soft sage tint */
+  
+  --color-forest: #1c3327;      /* Deep eucalyptus forest green */
+  --color-forest-hover: #13241b;
+  --color-timber: #a85e2e;      /* Warm Tasmanian cedar / oak timber */
+  --color-timber-hover: #8f4e24;
+  --color-sage: #507362;        /* Soft natural sage tint */
+  --color-sand: #d8cfc0;        /* Natural sand border color */
+  
+  --text-title: #18241d;       /* Deep earthy charcoal for headlines */
+  --text-body: #3b4740;        /* Readable dark slate/green for text */
+  --text-muted: #66736a;       /* Muted text */
+  --text-light: #ffffff;
+  
+  --border-subtle: #e6ded2;     /* Warm subtle divider border */
+  --border-card: #ded5c7;
+  
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  --shadow-subtle: 0 4px 20px rgba(28, 51, 39, 0.04);
+  --shadow-card: 0 10px 32px rgba(28, 51, 39, 0.07);
+  --shadow-hover: 0 20px 48px rgba(28, 51, 39, 0.12);
+  
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  color: var(--text-title);
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.825rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-accent);
+  color: var(--color-forest);
+  border: 1px solid rgba(28, 51, 39, 0.12);
+}
+
+.badge-timber {
+  background-color: #fdf4ed;
+  color: var(--color-timber);
+  border-color: rgba(168, 94, 46, 0.2);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.9rem 1.85rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-forest);
+  color: var(--text-light);
+  box-shadow: 0 4px 18px rgba(28, 51, 39, 0.18);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-forest-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(28, 51, 39, 0.28);
+}
+
+.btn-timber {
+  background-color: var(--color-timber);
+  color: var(--text-light);
+  box-shadow: 0 4px 18px rgba(168, 94, 46, 0.22);
+}
+
+.btn-timber:hover {
+  background-color: var(--color-timber-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(168, 94, 46, 0.32);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-forest);
+  border: 1.5px solid var(--color-forest);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-forest);
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+/* Spacing Helpers */
+.py-section {
+  padding: 5.5rem 0;
+}
+
+@media (min-width: 992px) {
+  .py-section {
+    padding: 7rem 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

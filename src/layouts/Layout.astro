@@ -1,0 +1,145 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "The Derby Double | Hillside Twin Cabins in Derby, Tasmania",
+  description = "Experience The Derby Double — twin architecturally designed timber cabins overlooking the Ringarooma River in Derby, Tasmania. Featuring private keypad bike lockups, river views, and trailhead proximity."
+} = Astro.props;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "The Derby Double",
+  "image": [
+    "https://www.airbnb.com.au/rooms/1611830891863557743",
+    "https://www.airbnb.com.au/rooms/1611313021568308752"
+  ],
+  "@id": "https://derbydouble.com.au/#lodging",
+  "url": "https://derbydouble.com.au",
+  "telephone": "+61-3-6300-0000",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ringarooma River Hillside",
+    "addressLocality": "Derby",
+    "addressRegion": "TAS",
+    "postalCode": "7264",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -41.1444,
+    "longitude": 147.8015
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "checkinTime": "15:00",
+  "checkoutTime": "10:00",
+  "numberOfRooms": 4,
+  "petsAllowed": false,
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "4.9"
+  },
+  "description": "The Derby Double offers two standalone timber cabins ('The Switchback Cabin' and 'The Berm Cabin') perched on a hillside overlooking the Ringarooma River in Derby, Tasmania. Tailored for mountain bike riders, groups, and nature retreats.",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Private Keypad Bike Lockup Sheds",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Bike Wash & Cleanup Station",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Shared Laundry & Drying Facilities",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ringarooma River & Forest Views",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Minutes to Blue Derby Trails",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Free High-Speed Wi-Fi",
+      "value": true
+    }
+  ],
+  "containsPlace": [
+    {
+      "@type": "Accommodation",
+      "name": "The Switchback Cabin",
+      "url": "https://www.airbnb.com.au/rooms/1611830891863557743",
+      "description": "Secluded 2-bedroom hillside cabin with river views, private bike storage, and deck.",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 4
+      }
+    },
+    {
+      "@type": "Accommodation",
+      "name": "The Berm Cabin",
+      "url": "https://www.airbnb.com.au/rooms/1611313021568308752",
+      "description": "Peaceful 2-bedroom timber cabin nestled against the forest edge with private bike shed.",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 4
+      }
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="The Derby Double, Derby Tasmania accommodation, Blue Derby mountain bike cabins, The Switchback Cabin Derby, The Berm Cabin Derby, Ringarooma River lodging, Airbnb Derby TAS" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:site_name" content="The Derby Double" />
+
+    <!-- Google Maps SEO: JSON-LD LodgingBusiness Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
