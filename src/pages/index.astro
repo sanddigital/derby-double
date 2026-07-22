@@ -8,13 +8,12 @@ import Layout from '../layouts/Layout.astro';
     <div class="container header-content">
       <a href="#" class="brand">
         <span class="brand-title">The Derby Double</span>
-        <span class="brand-sub">1B Bell St, Derby TAS</span>
+        <span class="brand-sub">Derby, Tasmania</span>
       </a>
 
       <nav class="nav-desktop">
         <a href="#about" class="nav-link">About</a>
         <a href="#cabins" class="nav-link">The Cabins</a>
-        <a href="#gallery" class="nav-link">Photo Gallery</a>
         <a href="#amenities" class="nav-link">Amenities</a>
         <a href="#location" class="nav-link">Location</a>
       </nav>
@@ -49,8 +48,8 @@ import Layout from '../layouts/Layout.astro';
               <path d="M12 5v14M5 12l7 7 7-7"/>
             </svg>
           </a>
-          <a href="#gallery" class="btn btn-outline" id="hero-gallery-btn">
-            <span>Explore Photo Gallery</span>
+          <a href="#amenities" class="btn btn-outline" id="hero-amenities-btn">
+            <span>Rider Amenities</span>
           </a>
         </div>
       </div>
@@ -258,115 +257,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Photo Gallery Section with Lightbox -->
-  <section id="gallery" class="gallery-section py-section">
-    <div class="container">
-      <div class="section-intro text-center">
-        <span class="badge">Property Highlights</span>
-        <h2 class="section-heading">Interactive Photo Gallery</h2>
-        <p class="section-lead">
-          Click any card below to open the interactive lightbox and explore photos of the property, timber cabins, and river scenery.
-        </p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-card" data-gallery-item data-title="The Switchback Cabin — River Outlook" data-desc="Elevated timber cabin deck with views over the Ringarooma River valley.">
-          <div class="gallery-media">
-            <svg viewBox="0 0 400 280" fill="none" preserveAspectRatio="xMidYMid slice">
-              <rect width="400" height="280" fill="#f3eee6"/>
-              <path d="M0 180 Q120 150 250 180 T400 160 L400 280 L0 280 Z" fill="#2d4a3e" opacity="0.2"/>
-              <path d="M0 210 Q150 190 280 215 T400 200 L400 280 L0 280 Z" fill="#22382d" opacity="0.35"/>
-              <polygon points="120,170 120,110 200,70 280,110 280,170" fill="#1c3327"/>
-              <rect x="180" y="125" width="25" height="45" fill="#a85e2e"/>
-            </svg>
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>The Switchback Cabin Deck</h4>
-            <p>Sweeping valley views of the Ringarooma River</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-gallery-item data-title="The Berm Cabin — Secluded Forest Setting" data-desc="Nestled alongside native Tasmanian gum trees and fern gullies.">
-          <div class="gallery-media">
-            <svg viewBox="0 0 400 280" fill="none" preserveAspectRatio="xMidYMid slice">
-              <rect width="400" height="280" fill="#e8f0ec"/>
-              <polygon points="100,180 100,120 180,80 260,120 260,180" fill="#a85e2e"/>
-              <rect x="160" y="135" width="25" height="45" fill="#1c3327"/>
-              <circle cx="320" cy="140" r="35" fill="#2d4a3e" opacity="0.25"/>
-              <circle cx="350" cy="120" r="25" fill="#22382d" opacity="0.2"/>
-            </svg>
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>The Berm Cabin Exterior</h4>
-            <p>Peaceful timber dwelling on 1B Bell St</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-gallery-item data-title="Private Keypad Bike Shed" data-desc="Dedicated lockup storage shed with digital keypad code for secure bike storage.">
-          <div class="gallery-media">
-            <svg viewBox="0 0 400 280" fill="none" preserveAspectRatio="xMidYMid slice">
-              <rect width="400" height="280" fill="#f4efe6"/>
-              <rect x="100" y="90" width="200" height="140" fill="#1c3327" rx="8"/>
-              <rect x="175" y="140" width="50" height="90" fill="#a85e2e"/>
-              <circle cx="200" cy="170" r="8" fill="#faf8f5"/>
-              <text x="200" y="60" fill="#22382d" font-family="Plus Jakarta Sans" font-size="14" font-weight="700" text-anchor="middle">KEYPAD LOCKUP STORAGE</text>
-            </svg>
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Private Bike Storage</h4>
-            <p>Individual keypad sheds for up to 6 bikes</p>
-          </div>
-        </div>
-
-        <div class="gallery-card" data-gallery-item data-title="Ringarooma River Hillside" data-desc="The Derby Double hillside setting overlooking river bends and Blue Derby trailheads.">
-          <div class="gallery-media">
-            <svg viewBox="0 0 400 280" fill="none" preserveAspectRatio="xMidYMid slice">
-              <rect width="400" height="280" fill="#eaf1ed"/>
-              <path d="M0 160 Q200 120 400 170 L400 280 L0 280 Z" fill="#2d4a3e" opacity="0.3"/>
-              <path d="M0 220 Q200 190 400 230" stroke="#7a9a8b" stroke-width="12"/>
-            </svg>
-            <div class="gallery-overlay">
-              <span class="gallery-zoom-icon">🔍 Click to Expand</span>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Ringarooma River Scenery</h4>
-            <p>Minutes to main trailheads & town center</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Lightbox Modal -->
-  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
-    <div class="lightbox-content">
-      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
-      <div class="lightbox-display" id="lightbox-display">
-        <!-- SVG Graphic Rendered via JS -->
-      </div>
-      <div class="lightbox-caption">
-        <h3 id="lightbox-title">Image Title</h3>
-        <p id="lightbox-desc">Image Description</p>
-      </div>
-      <div class="lightbox-nav">
-        <button class="lightbox-btn" id="lightbox-prev" aria-label="Previous Image">‹ Prev</button>
-        <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
-        <button class="lightbox-btn" id="lightbox-next" aria-label="Next Image">Next ›</button>
-      </div>
-    </div>
-  </div>
-
   <!-- Rider & Guest Amenities Grid -->
   <section id="amenities" class="amenities-section py-section">
     <div class="container">
@@ -481,77 +371,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </footer>
 </Layout>
-
-<script>
-  // Interactive Lightbox Script
-  document.addEventListener('DOMContentLoaded', () => {
-    const items = Array.from(document.querySelectorAll('[data-gallery-item]'));
-    const modal = document.getElementById('lightbox-modal');
-    const backdrop = document.getElementById('lightbox-backdrop');
-    const closeBtn = document.getElementById('lightbox-close');
-    const prevBtn = document.getElementById('lightbox-prev');
-    const nextBtn = document.getElementById('lightbox-next');
-    const display = document.getElementById('lightbox-display');
-    const titleEl = document.getElementById('lightbox-title');
-    const descEl = document.getElementById('lightbox-desc');
-    const counterEl = document.getElementById('lightbox-counter');
-
-    let currentIndex = 0;
-
-    function openLightbox(index) {
-      currentIndex = index;
-      const item = items[currentIndex];
-      const title = item.getAttribute('data-title') || '';
-      const desc = item.getAttribute('data-desc') || '';
-      const svgHTML = item.querySelector('.gallery-media svg')?.outerHTML || '';
-
-      if (display) display.innerHTML = svgHTML;
-      if (titleEl) titleEl.textContent = title;
-      if (descEl) descEl.textContent = desc;
-      if (counterEl) counterEl.textContent = `${currentIndex + 1} / ${items.length}`;
-
-      if (modal) {
-        modal.classList.add('active');
-        modal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-      }
-    }
-
-    function closeLightbox() {
-      if (modal) {
-        modal.classList.remove('active');
-        modal.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-      }
-    }
-
-    function showNext() {
-      currentIndex = (currentIndex + 1) % items.length;
-      openLightbox(currentIndex);
-    }
-
-    function showPrev() {
-      currentIndex = (currentIndex - 1 + items.length) % items.length;
-      openLightbox(currentIndex);
-    }
-
-    items.forEach((item, idx) => {
-      item.addEventListener('click', () => openLightbox(idx));
-    });
-
-    closeBtn?.addEventListener('click', closeLightbox);
-    backdrop?.addEventListener('click', closeLightbox);
-    nextBtn?.addEventListener('click', showNext);
-    prevBtn?.addEventListener('click', showPrev);
-
-    document.addEventListener('keydown', (e) => {
-      if (!modal?.classList.contains('active')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowRight') showNext();
-      if (e.key === 'ArrowLeft') showPrev();
-    });
-  });
-</script>
 
 <style>
   /* Header Styling */
@@ -921,200 +740,6 @@ import Layout from '../layouts/Layout.astro';
   .group-banner-text p {
     font-size: 0.975rem;
     color: var(--text-body);
-  }
-
-  /* Gallery Section */
-  .gallery-section {
-    background-color: var(--bg-main);
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.75rem;
-  }
-
-  .gallery-card {
-    background-color: var(--bg-surface);
-    border: 1px solid var(--border-card);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: var(--shadow-subtle);
-    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
-  }
-
-  .gallery-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
-  }
-
-  .gallery-media {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    background-color: var(--bg-subtle);
-  }
-
-  .gallery-media svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .gallery-overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(28, 51, 39, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity var(--transition-smooth);
-  }
-
-  .gallery-card:hover .gallery-overlay {
-    opacity: 1;
-  }
-
-  .gallery-zoom-icon {
-    color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: 700;
-    background-color: var(--color-forest);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-full);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .gallery-info {
-    padding: 1.25rem;
-  }
-
-  .gallery-info h4 {
-    font-size: 1.05rem;
-    color: var(--text-title);
-    margin-bottom: 0.25rem;
-  }
-
-  .gallery-info p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-
-  /* Lightbox Modal */
-  .lightbox-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-
-  .lightbox-modal.active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .lightbox-backdrop {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(24, 36, 29, 0.85);
-    backdrop-filter: blur(8px);
-  }
-
-  .lightbox-content {
-    position: relative;
-    z-index: 1001;
-    width: 90%;
-    max-width: 800px;
-    background-color: var(--bg-surface);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem;
-  }
-
-  .lightbox-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1002;
-    background: var(--bg-subtle);
-    border: none;
-    font-size: 1.5rem;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: var(--text-title);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .lightbox-display {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    background-color: var(--bg-subtle);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-
-  .lightbox-display svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .lightbox-caption {
-    margin-bottom: 1rem;
-  }
-
-  .lightbox-caption h3 {
-    font-size: 1.25rem;
-    color: var(--text-title);
-    margin-bottom: 0.25rem;
-  }
-
-  .lightbox-caption p {
-    font-size: 0.925rem;
-    color: var(--text-muted);
-  }
-
-  .lightbox-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid var(--border-subtle);
-    padding-top: 1rem;
-  }
-
-  .lightbox-btn {
-    background-color: var(--bg-subtle);
-    border: 1px solid var(--border-card);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-full);
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--color-forest);
-    cursor: pointer;
-    transition: background-color var(--transition-smooth);
-  }
-
-  .lightbox-btn:hover {
-    background-color: var(--bg-accent);
-  }
-
-  .lightbox-counter {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-muted);
   }
 
   /* Amenities Section */
