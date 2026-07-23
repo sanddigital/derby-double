@@ -8,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="container header-content">
       <a href="#" class="brand">
         <span class="brand-title">The Derby Double</span>
-        <span class="brand-sub">Derby, Tasmania</span>
+        <span class="brand-sub">1B Bell St, Derby TAS</span>
       </a>
 
       <nav class="nav-desktop">
@@ -54,28 +54,17 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <!-- Natural Hero Image Illustration Container -->
+      <!-- Hero Visual Card with Real Property Photo -->
       <div class="hero-visual-card">
-        <svg class="hero-nature-svg" viewBox="0 0 700 480" fill="none" preserveAspectRatio="xMidYMid slice">
-          <rect width="700" height="480" fill="#f4efe6"/>
-          <!-- River & Forest Hills Background -->
-          <path d="M0 320 Q200 270 400 320 T700 290 L700 480 L0 480 Z" fill="#2d4a3e" opacity="0.18"/>
-          <path d="M0 365 Q250 330 450 375 T700 345 L700 480 L0 480 Z" fill="#22382d" opacity="0.35"/>
-          <path d="M-50 415 Q150 395 350 435 T750 405 L750 480 L-50 480 Z" fill="#1c3327"/>
-          <!-- Ringarooma River Stroke -->
-          <path d="M0 445 Q300 415 700 455" stroke="#7a9a8b" stroke-width="14" opacity="0.75"/>
-          
-          <!-- Twin Timber Cabins -->
-          <polygon points="170,270 170,205 250,155 330,205 330,270" fill="#a85e2e"/>
-          <rect x="230" y="220" width="30" height="50" fill="#faf8f5"/>
-          <rect x="190" y="215" width="26" height="26" fill="#e6ded2"/>
-          <rect x="274" y="215" width="26" height="26" fill="#e6ded2"/>
-
-          <polygon points="410,240 410,175 490,125 570,175 570,240" fill="#8f4e24"/>
-          <rect x="470" y="190" width="30" height="50" fill="#faf8f5"/>
-          <rect x="430" y="185" width="26" height="26" fill="#e6ded2"/>
-          <rect x="514" y="185" width="26" height="26" fill="#e6ded2"/>
-        </svg>
+        <picture>
+          <source srcset="/images/hero-property.webp" type="image/webp" />
+          <img 
+            src="/images/hero-property.jpg" 
+            alt="The Derby Double twin timber cabins perched on the hillside above Ringarooma River" 
+            class="hero-img" 
+            loading="eager"
+          />
+        </picture>
       </div>
     </div>
   </section>
@@ -122,13 +111,15 @@ import Layout from '../layouts/Layout.astro';
         <!-- Cabin 1: The Switchback Cabin -->
         <article class="cabin-card" id="cabin-switchback">
           <div class="cabin-media">
-            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none">
-              <rect width="600" height="400" fill="#f3eee6"/>
-              <polygon points="150,270 150,175 300,95 450,175 450,270" fill="#1c3327"/>
-              <rect x="260" y="195" width="45" height="75" fill="#a85e2e"/>
-              <rect x="180" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
-              <rect x="330" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
-            </svg>
+            <picture>
+              <source srcset="/images/switchback-cabin.webp" type="image/webp" />
+              <img 
+                src="/images/switchback-cabin.jpg" 
+                alt="The Switchback Cabin at The Derby Double" 
+                class="cabin-img" 
+                loading="lazy"
+              />
+            </picture>
             <div class="cabin-media-badge">The Switchback Cabin</div>
           </div>
 
@@ -185,13 +176,15 @@ import Layout from '../layouts/Layout.astro';
         <!-- Cabin 2: The Berm Cabin -->
         <article class="cabin-card" id="cabin-berm">
           <div class="cabin-media">
-            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none">
-              <rect width="600" height="400" fill="#e8f0ec"/>
-              <polygon points="150,270 150,175 300,95 450,175 450,270" fill="#a85e2e"/>
-              <rect x="260" y="195" width="45" height="75" fill="#1c3327"/>
-              <rect x="180" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
-              <rect x="330" y="185" width="55" height="45" fill="#ffffff" stroke="#ded5c7" stroke-width="2"/>
-            </svg>
+            <picture>
+              <source srcset="/images/berm-cabin.webp" type="image/webp" />
+              <img 
+                src="/images/berm-cabin.jpg" 
+                alt="The Berm Cabin at The Derby Double" 
+                class="cabin-img" 
+                loading="lazy"
+              />
+            </picture>
             <div class="cabin-media-badge">The Berm Cabin</div>
           </div>
 
@@ -496,10 +489,11 @@ import Layout from '../layouts/Layout.astro';
     background-color: var(--bg-subtle);
   }
 
-  .hero-nature-svg {
+  .hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   /* Highlights Bar */
@@ -612,10 +606,11 @@ import Layout from '../layouts/Layout.astro';
     min-height: 280px;
   }
 
-  .cabin-media svg {
+  .cabin-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .cabin-media-badge {
